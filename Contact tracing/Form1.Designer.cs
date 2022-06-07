@@ -38,7 +38,7 @@
             this.agelabel = new System.Windows.Forms.Label();
             this.agenumericud = new System.Windows.Forms.NumericUpDown();
             this.sexlabel = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.datetimetxt = new System.Windows.Forms.DateTimePicker();
             this.datelabel = new System.Windows.Forms.Label();
             this.sextxtbox = new System.Windows.Forms.TextBox();
             this.pnumtxtbox = new System.Windows.Forms.TextBox();
@@ -171,13 +171,13 @@
             this.sexlabel.TabIndex = 13;
             this.sexlabel.Text = "SEX";
             // 
-            // dateTimePicker1
+            // datetimetxt
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Location = new System.Drawing.Point(779, 50);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(242, 30);
-            this.dateTimePicker1.TabIndex = 14;
+            this.datetimetxt.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.datetimetxt.Location = new System.Drawing.Point(779, 50);
+            this.datetimetxt.Name = "datetimetxt";
+            this.datetimetxt.Size = new System.Drawing.Size(242, 30);
+            this.datetimetxt.TabIndex = 14;
             // 
             // datelabel
             // 
@@ -577,6 +577,7 @@
             this.submitbutton.TabIndex = 55;
             this.submitbutton.Text = "SUBMIT";
             this.submitbutton.UseVisualStyleBackColor = false;
+            this.submitbutton.Click += new System.EventHandler(this.submitbutton_Click);
             // 
             // ansconsenttxtbox
             // 
@@ -659,7 +660,7 @@
             this.Controls.Add(this.pnumtxtbox);
             this.Controls.Add(this.sextxtbox);
             this.Controls.Add(this.datelabel);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.datetimetxt);
             this.Controls.Add(this.sexlabel);
             this.Controls.Add(this.agenumericud);
             this.Controls.Add(this.agelabel);
@@ -693,7 +694,7 @@
         private Label agelabel;
         private NumericUpDown agenumericud;
         private Label sexlabel;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker datetimetxt;
         private Label datelabel;
         private TextBox sextxtbox;
         private TextBox pnumtxtbox;
