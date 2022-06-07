@@ -81,7 +81,9 @@
             this.submitbutton = new System.Windows.Forms.Button();
             this.ansconsenttxtbox = new System.Windows.Forms.TextBox();
             this.ansconsentlabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.agenumericud)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // CTLabel
@@ -556,12 +558,12 @@
             // consenttxtbox
             // 
             this.consenttxtbox.BackColor = System.Drawing.SystemColors.Info;
-            this.consenttxtbox.Enabled = false;
             this.consenttxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.consenttxtbox.ForeColor = System.Drawing.Color.Navy;
-            this.consenttxtbox.Location = new System.Drawing.Point(779, 446);
+            this.consenttxtbox.Location = new System.Drawing.Point(777, 465);
             this.consenttxtbox.Name = "consenttxtbox";
-            this.consenttxtbox.Size = new System.Drawing.Size(242, 146);
+            this.consenttxtbox.ReadOnly = true;
+            this.consenttxtbox.Size = new System.Drawing.Size(244, 146);
             this.consenttxtbox.TabIndex = 54;
             this.consenttxtbox.Text = resources.GetString("consenttxtbox.Text");
             // 
@@ -595,6 +597,17 @@
             this.ansconsentlabel.TabIndex = 57;
             this.ansconsentlabel.Text = "Agree or Disagree";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(777, 124);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(247, 319);
+            this.pictureBox1.TabIndex = 58;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -603,6 +616,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1076, 824);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ansconsentlabel);
             this.Controls.Add(this.ansconsenttxtbox);
             this.Controls.Add(this.submitbutton);
@@ -662,6 +676,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CONTACT TRACING";
             ((System.ComponentModel.ISupportInitialize)(this.agenumericud)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -721,5 +736,6 @@
         private Button submitbutton;
         private TextBox ansconsenttxtbox;
         private Label ansconsentlabel;
+        private PictureBox pictureBox1;
     }
 }
