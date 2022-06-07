@@ -67,14 +67,20 @@
             this.ecmnamelabel = new System.Windows.Forms.Label();
             this.eclnametxtbox = new System.Windows.Forms.TextBox();
             this.eclnamelabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ecsnametxtbox = new System.Windows.Forms.TextBox();
             this.ecsnamelabel = new System.Windows.Forms.Label();
             this.snamelabel = new System.Windows.Forms.Label();
             this.lnamelabel = new System.Windows.Forms.Label();
             this.mnamelabel = new System.Windows.Forms.Label();
             this.fnamelabel = new System.Windows.Forms.Label();
             this.ephoneconlabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ephonecontxtbox = new System.Windows.Forms.TextBox();
+            this.ecrelationtxtbox = new System.Windows.Forms.TextBox();
+            this.ecrelationlabel = new System.Windows.Forms.Label();
+            this.consenttxtbox = new System.Windows.Forms.RichTextBox();
+            this.submitbutton = new System.Windows.Forms.Button();
+            this.ansconsenttxtbox = new System.Windows.Forms.TextBox();
+            this.ansconsentlabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.agenumericud)).BeginInit();
             this.SuspendLayout();
             // 
@@ -442,12 +448,12 @@
             this.eclnamelabel.TabIndex = 42;
             this.eclnamelabel.Text = "Last Name";
             // 
-            // textBox1
+            // ecsnametxtbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(666, 674);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(78, 27);
-            this.textBox1.TabIndex = 43;
+            this.ecsnametxtbox.Location = new System.Drawing.Point(666, 674);
+            this.ecsnametxtbox.Name = "ecsnametxtbox";
+            this.ecsnametxtbox.Size = new System.Drawing.Size(78, 27);
+            this.ecsnametxtbox.TabIndex = 43;
             // 
             // ecsnamelabel
             // 
@@ -519,14 +525,75 @@
             this.ephoneconlabel.Name = "ephoneconlabel";
             this.ephoneconlabel.Size = new System.Drawing.Size(311, 24);
             this.ephoneconlabel.TabIndex = 49;
-            this.ephoneconlabel.Text = "EMERGENCY CONTACT PHONE";
+            this.ephoneconlabel.Text = "EMERGENCY PHONE CONTACT";
             // 
-            // textBox2
+            // ephonecontxtbox
             // 
-            this.textBox2.Location = new System.Drawing.Point(51, 756);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 27);
-            this.textBox2.TabIndex = 50;
+            this.ephonecontxtbox.Location = new System.Drawing.Point(51, 756);
+            this.ephonecontxtbox.Name = "ephonecontxtbox";
+            this.ephonecontxtbox.Size = new System.Drawing.Size(313, 27);
+            this.ephonecontxtbox.TabIndex = 50;
+            // 
+            // ecrelationtxtbox
+            // 
+            this.ecrelationtxtbox.Location = new System.Drawing.Point(387, 756);
+            this.ecrelationtxtbox.Name = "ecrelationtxtbox";
+            this.ecrelationtxtbox.Size = new System.Drawing.Size(357, 27);
+            this.ecrelationtxtbox.TabIndex = 52;
+            // 
+            // ecrelationlabel
+            // 
+            this.ecrelationlabel.AutoSize = true;
+            this.ecrelationlabel.BackColor = System.Drawing.Color.Transparent;
+            this.ecrelationlabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ecrelationlabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ecrelationlabel.Location = new System.Drawing.Point(390, 731);
+            this.ecrelationlabel.Name = "ecrelationlabel";
+            this.ecrelationlabel.Size = new System.Drawing.Size(159, 24);
+            this.ecrelationlabel.TabIndex = 53;
+            this.ecrelationlabel.Text = "RELATIONSHIP";
+            // 
+            // consenttxtbox
+            // 
+            this.consenttxtbox.BackColor = System.Drawing.SystemColors.Info;
+            this.consenttxtbox.Enabled = false;
+            this.consenttxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.consenttxtbox.ForeColor = System.Drawing.Color.Navy;
+            this.consenttxtbox.Location = new System.Drawing.Point(779, 446);
+            this.consenttxtbox.Name = "consenttxtbox";
+            this.consenttxtbox.Size = new System.Drawing.Size(242, 146);
+            this.consenttxtbox.TabIndex = 54;
+            this.consenttxtbox.Text = resources.GetString("consenttxtbox.Text");
+            // 
+            // submitbutton
+            // 
+            this.submitbutton.BackColor = System.Drawing.Color.Thistle;
+            this.submitbutton.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.submitbutton.Location = new System.Drawing.Point(779, 702);
+            this.submitbutton.Name = "submitbutton";
+            this.submitbutton.Size = new System.Drawing.Size(239, 81);
+            this.submitbutton.TabIndex = 55;
+            this.submitbutton.Text = "SUBMIT";
+            this.submitbutton.UseVisualStyleBackColor = false;
+            // 
+            // ansconsenttxtbox
+            // 
+            this.ansconsenttxtbox.Location = new System.Drawing.Point(777, 639);
+            this.ansconsenttxtbox.Name = "ansconsenttxtbox";
+            this.ansconsenttxtbox.Size = new System.Drawing.Size(242, 27);
+            this.ansconsenttxtbox.TabIndex = 56;
+            // 
+            // ansconsentlabel
+            // 
+            this.ansconsentlabel.AutoSize = true;
+            this.ansconsentlabel.BackColor = System.Drawing.Color.Transparent;
+            this.ansconsentlabel.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ansconsentlabel.ForeColor = System.Drawing.Color.MistyRose;
+            this.ansconsentlabel.Location = new System.Drawing.Point(779, 615);
+            this.ansconsentlabel.Name = "ansconsentlabel";
+            this.ansconsentlabel.Size = new System.Drawing.Size(150, 22);
+            this.ansconsentlabel.TabIndex = 57;
+            this.ansconsentlabel.Text = "Agree or Disagree";
             // 
             // Form1
             // 
@@ -535,15 +602,21 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1076, 861);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(1076, 824);
+            this.Controls.Add(this.ansconsentlabel);
+            this.Controls.Add(this.ansconsenttxtbox);
+            this.Controls.Add(this.submitbutton);
+            this.Controls.Add(this.consenttxtbox);
+            this.Controls.Add(this.ecrelationlabel);
+            this.Controls.Add(this.ecrelationtxtbox);
+            this.Controls.Add(this.ephonecontxtbox);
             this.Controls.Add(this.ephoneconlabel);
             this.Controls.Add(this.snamelabel);
             this.Controls.Add(this.lnamelabel);
             this.Controls.Add(this.mnamelabel);
             this.Controls.Add(this.fnamelabel);
             this.Controls.Add(this.ecsnamelabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ecsnametxtbox);
             this.Controls.Add(this.eclnamelabel);
             this.Controls.Add(this.eclnametxtbox);
             this.Controls.Add(this.ecmnamelabel);
@@ -634,13 +707,19 @@
         private Label ecmnamelabel;
         private TextBox eclnametxtbox;
         private Label eclnamelabel;
-        private TextBox textBox1;
+        private TextBox ecsnametxtbox;
         private Label ecsnamelabel;
         private Label snamelabel;
         private Label lnamelabel;
         private Label mnamelabel;
         private Label fnamelabel;
         private Label ephoneconlabel;
-        private TextBox textBox2;
+        private TextBox ephonecontxtbox;
+        private TextBox ecrelationtxtbox;
+        private Label ecrelationlabel;
+        private RichTextBox consenttxtbox;
+        private Button submitbutton;
+        private TextBox ansconsenttxtbox;
+        private Label ansconsentlabel;
     }
 }
