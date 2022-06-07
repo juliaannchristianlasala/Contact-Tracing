@@ -17,6 +17,14 @@ namespace Contact_tracing
             file.WriteLine("Sex: " + sextxtbox.Text);
             file.WriteLine("Phone Number: " + pnumtxtbox.Text);
             file.WriteLine("Personal Email: " + pemailltxtbox.Text);
+            file.WriteLine("Home Address: " + sttxtbox.Text + ", " + citytxtbox.Text + ", " + sprovtxtbox.Text + ", " + pzipctxtbox.Text);
+            file.WriteLine("");
+            file.WriteLine("Have you been to one of the COVID-19 affected city in the last 14 days?");
+            file.WriteLine("Answer: " + q1txtbox.Text);
+            file.WriteLine("Have you been in a close contact with a confirmes case of coronavirus?");
+            file.WriteLine("Answer: " + q2txtbox.Text);
+            file.WriteLine("Are you currently experiencing symptoms (cough,shortness of breath, fever)");
+            file.WriteLine("Answer: " + q3txtbox.Text);
             file.Close();
         }
     }
