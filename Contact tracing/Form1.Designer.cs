@@ -30,10 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.CTLabel = new System.Windows.Forms.Label();
-            this.fnamelabel = new System.Windows.Forms.Label();
-            this.mnamelabel = new System.Windows.Forms.Label();
-            this.lnamelabel = new System.Windows.Forms.Label();
-            this.snamelabel = new System.Windows.Forms.Label();
+            this.fullnamelabel = new System.Windows.Forms.Label();
             this.fnametxtbox = new System.Windows.Forms.TextBox();
             this.mnametxtbox = new System.Windows.Forms.TextBox();
             this.lnametxtbox = new System.Windows.Forms.TextBox();
@@ -57,6 +54,27 @@
             this.citylabel = new System.Windows.Forms.Label();
             this.sprovlabel = new System.Windows.Forms.Label();
             this.pzipclabel = new System.Windows.Forms.Label();
+            this.q1txtbox = new System.Windows.Forms.TextBox();
+            this.q1label = new System.Windows.Forms.Label();
+            this.q2label = new System.Windows.Forms.Label();
+            this.q2txtbox = new System.Windows.Forms.TextBox();
+            this.q3txtbox = new System.Windows.Forms.TextBox();
+            this.q3label = new System.Windows.Forms.Label();
+            this.econnamelabel = new System.Windows.Forms.Label();
+            this.econtacttxtbox = new System.Windows.Forms.TextBox();
+            this.ecfnamelabel = new System.Windows.Forms.Label();
+            this.ecmnametxtbox = new System.Windows.Forms.TextBox();
+            this.ecmnamelabel = new System.Windows.Forms.Label();
+            this.eclnametxtbox = new System.Windows.Forms.TextBox();
+            this.eclnamelabel = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ecsnamelabel = new System.Windows.Forms.Label();
+            this.snamelabel = new System.Windows.Forms.Label();
+            this.lnamelabel = new System.Windows.Forms.Label();
+            this.mnamelabel = new System.Windows.Forms.Label();
+            this.fnamelabel = new System.Windows.Forms.Label();
+            this.ephoneconlabel = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.agenumericud)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,84 +86,48 @@
             this.CTLabel.Font = new System.Drawing.Font("Elephant", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CTLabel.ForeColor = System.Drawing.Color.Lavender;
             this.CTLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.CTLabel.Location = new System.Drawing.Point(37, 25);
+            this.CTLabel.Location = new System.Drawing.Point(37, 23);
             this.CTLabel.Name = "CTLabel";
             this.CTLabel.Size = new System.Drawing.Size(622, 64);
             this.CTLabel.TabIndex = 0;
             this.CTLabel.Text = "CONTACT TRACING";
             // 
-            // fnamelabel
+            // fullnamelabel
             // 
-            this.fnamelabel.AutoSize = true;
-            this.fnamelabel.BackColor = System.Drawing.Color.Transparent;
-            this.fnamelabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.fnamelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.fnamelabel.Location = new System.Drawing.Point(52, 113);
-            this.fnamelabel.Name = "fnamelabel";
-            this.fnamelabel.Size = new System.Drawing.Size(132, 24);
-            this.fnamelabel.TabIndex = 1;
-            this.fnamelabel.Text = "FIRST NAME";
-            // 
-            // mnamelabel
-            // 
-            this.mnamelabel.AutoSize = true;
-            this.mnamelabel.BackColor = System.Drawing.Color.Transparent;
-            this.mnamelabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mnamelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.mnamelabel.Location = new System.Drawing.Point(286, 113);
-            this.mnamelabel.Name = "mnamelabel";
-            this.mnamelabel.Size = new System.Drawing.Size(157, 24);
-            this.mnamelabel.TabIndex = 2;
-            this.mnamelabel.Text = "MIDDLE NAME";
-            // 
-            // lnamelabel
-            // 
-            this.lnamelabel.AutoSize = true;
-            this.lnamelabel.BackColor = System.Drawing.Color.Transparent;
-            this.lnamelabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lnamelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lnamelabel.Location = new System.Drawing.Point(482, 113);
-            this.lnamelabel.Name = "lnamelabel";
-            this.lnamelabel.Size = new System.Drawing.Size(123, 24);
-            this.lnamelabel.TabIndex = 3;
-            this.lnamelabel.Text = "LAST NAME";
-            // 
-            // snamelabel
-            // 
-            this.snamelabel.AutoSize = true;
-            this.snamelabel.BackColor = System.Drawing.Color.Transparent;
-            this.snamelabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.snamelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.snamelabel.Location = new System.Drawing.Point(666, 113);
-            this.snamelabel.Name = "snamelabel";
-            this.snamelabel.Size = new System.Drawing.Size(82, 24);
-            this.snamelabel.TabIndex = 4;
-            this.snamelabel.Text = "SUFFIX";
+            this.fullnamelabel.AutoSize = true;
+            this.fullnamelabel.BackColor = System.Drawing.Color.Transparent;
+            this.fullnamelabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.fullnamelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.fullnamelabel.Location = new System.Drawing.Point(52, 97);
+            this.fullnamelabel.Name = "fullnamelabel";
+            this.fullnamelabel.Size = new System.Drawing.Size(70, 24);
+            this.fullnamelabel.TabIndex = 1;
+            this.fullnamelabel.Text = "NAME";
             // 
             // fnametxtbox
             // 
-            this.fnametxtbox.Location = new System.Drawing.Point(49, 140);
+            this.fnametxtbox.Location = new System.Drawing.Point(49, 124);
             this.fnametxtbox.Name = "fnametxtbox";
             this.fnametxtbox.Size = new System.Drawing.Size(216, 27);
             this.fnametxtbox.TabIndex = 5;
             // 
             // mnametxtbox
             // 
-            this.mnametxtbox.Location = new System.Drawing.Point(283, 140);
+            this.mnametxtbox.Location = new System.Drawing.Point(283, 124);
             this.mnametxtbox.Name = "mnametxtbox";
             this.mnametxtbox.Size = new System.Drawing.Size(178, 27);
             this.mnametxtbox.TabIndex = 6;
             // 
             // lnametxtbox
             // 
-            this.lnametxtbox.Location = new System.Drawing.Point(479, 140);
+            this.lnametxtbox.Location = new System.Drawing.Point(479, 124);
             this.lnametxtbox.Name = "lnametxtbox";
             this.lnametxtbox.Size = new System.Drawing.Size(171, 27);
             this.lnametxtbox.TabIndex = 7;
             // 
             // snametxtbox
             // 
-            this.snametxtbox.Location = new System.Drawing.Point(667, 140);
+            this.snametxtbox.Location = new System.Drawing.Point(667, 124);
             this.snametxtbox.Name = "snametxtbox";
             this.snametxtbox.Size = new System.Drawing.Size(78, 27);
             this.snametxtbox.TabIndex = 8;
@@ -281,7 +263,7 @@
             // 
             // pzipctxtbox
             // 
-            this.pzipctxtbox.Location = new System.Drawing.Point(49, 375);
+            this.pzipctxtbox.Location = new System.Drawing.Point(49, 371);
             this.pzipctxtbox.Name = "pzipctxtbox";
             this.pzipctxtbox.Size = new System.Drawing.Size(318, 27);
             this.pzipctxtbox.TabIndex = 25;
@@ -292,7 +274,7 @@
             this.stlabellabel.BackColor = System.Drawing.Color.Transparent;
             this.stlabellabel.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.stlabellabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.stlabellabel.Location = new System.Drawing.Point(49, 297);
+            this.stlabellabel.Location = new System.Drawing.Point(48, 297);
             this.stlabellabel.Name = "stlabellabel";
             this.stlabellabel.Size = new System.Drawing.Size(98, 16);
             this.stlabellabel.TabIndex = 26;
@@ -304,7 +286,7 @@
             this.citylabel.BackColor = System.Drawing.Color.Transparent;
             this.citylabel.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.citylabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.citylabel.Location = new System.Drawing.Point(49, 349);
+            this.citylabel.Location = new System.Drawing.Point(48, 349);
             this.citylabel.Name = "citylabel";
             this.citylabel.Size = new System.Drawing.Size(32, 16);
             this.citylabel.TabIndex = 27;
@@ -328,11 +310,223 @@
             this.pzipclabel.BackColor = System.Drawing.Color.Transparent;
             this.pzipclabel.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pzipclabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.pzipclabel.Location = new System.Drawing.Point(50, 403);
+            this.pzipclabel.Location = new System.Drawing.Point(49, 399);
             this.pzipclabel.Name = "pzipclabel";
             this.pzipclabel.Size = new System.Drawing.Size(106, 16);
             this.pzipclabel.TabIndex = 29;
             this.pzipclabel.Text = "Postal/Zip Code";
+            // 
+            // q1txtbox
+            // 
+            this.q1txtbox.Location = new System.Drawing.Point(48, 469);
+            this.q1txtbox.Name = "q1txtbox";
+            this.q1txtbox.Size = new System.Drawing.Size(596, 27);
+            this.q1txtbox.TabIndex = 30;
+            // 
+            // q1label
+            // 
+            this.q1label.AutoSize = true;
+            this.q1label.BackColor = System.Drawing.Color.Transparent;
+            this.q1label.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.q1label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.q1label.Location = new System.Drawing.Point(49, 446);
+            this.q1label.Name = "q1label";
+            this.q1label.Size = new System.Drawing.Size(567, 22);
+            this.q1label.TabIndex = 31;
+            this.q1label.Text = "Have you been to one of the COVID-19 affected city in the last 14 days?";
+            // 
+            // q2label
+            // 
+            this.q2label.AutoSize = true;
+            this.q2label.BackColor = System.Drawing.Color.Transparent;
+            this.q2label.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.q2label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.q2label.Location = new System.Drawing.Point(49, 505);
+            this.q2label.Name = "q2label";
+            this.q2label.Size = new System.Drawing.Size(554, 22);
+            this.q2label.TabIndex = 32;
+            this.q2label.Text = "Have you been in a close contact with a confirmes case of coronavirus?";
+            // 
+            // q2txtbox
+            // 
+            this.q2txtbox.Location = new System.Drawing.Point(48, 529);
+            this.q2txtbox.Name = "q2txtbox";
+            this.q2txtbox.Size = new System.Drawing.Size(596, 27);
+            this.q2txtbox.TabIndex = 33;
+            // 
+            // q3txtbox
+            // 
+            this.q3txtbox.Location = new System.Drawing.Point(48, 590);
+            this.q3txtbox.Name = "q3txtbox";
+            this.q3txtbox.Size = new System.Drawing.Size(596, 27);
+            this.q3txtbox.TabIndex = 34;
+            // 
+            // q3label
+            // 
+            this.q3label.AutoSize = true;
+            this.q3label.BackColor = System.Drawing.Color.Transparent;
+            this.q3label.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.q3label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.q3label.Location = new System.Drawing.Point(51, 566);
+            this.q3label.Name = "q3label";
+            this.q3label.Size = new System.Drawing.Size(593, 22);
+            this.q3label.TabIndex = 35;
+            this.q3label.Text = "Are you currently experiencing symptoms (cough,shortness of breath, fever)";
+            // 
+            // econnamelabel
+            // 
+            this.econnamelabel.AutoSize = true;
+            this.econnamelabel.BackColor = System.Drawing.Color.Transparent;
+            this.econnamelabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.econnamelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.econnamelabel.Location = new System.Drawing.Point(53, 647);
+            this.econnamelabel.Name = "econnamelabel";
+            this.econnamelabel.Size = new System.Drawing.Size(300, 24);
+            this.econnamelabel.TabIndex = 36;
+            this.econnamelabel.Text = "EMERGENCY CONTACT NAME";
+            // 
+            // econtacttxtbox
+            // 
+            this.econtacttxtbox.Location = new System.Drawing.Point(50, 674);
+            this.econtacttxtbox.Name = "econtacttxtbox";
+            this.econtacttxtbox.Size = new System.Drawing.Size(215, 27);
+            this.econtacttxtbox.TabIndex = 37;
+            // 
+            // ecfnamelabel
+            // 
+            this.ecfnamelabel.AutoSize = true;
+            this.ecfnamelabel.BackColor = System.Drawing.Color.Transparent;
+            this.ecfnamelabel.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ecfnamelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ecfnamelabel.Location = new System.Drawing.Point(51, 702);
+            this.ecfnamelabel.Name = "ecfnamelabel";
+            this.ecfnamelabel.Size = new System.Drawing.Size(75, 16);
+            this.ecfnamelabel.TabIndex = 38;
+            this.ecfnamelabel.Text = "First Name";
+            // 
+            // ecmnametxtbox
+            // 
+            this.ecmnametxtbox.Location = new System.Drawing.Point(282, 674);
+            this.ecmnametxtbox.Name = "ecmnametxtbox";
+            this.ecmnametxtbox.Size = new System.Drawing.Size(178, 27);
+            this.ecmnametxtbox.TabIndex = 39;
+            // 
+            // ecmnamelabel
+            // 
+            this.ecmnamelabel.AutoSize = true;
+            this.ecmnamelabel.BackColor = System.Drawing.Color.Transparent;
+            this.ecmnamelabel.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ecmnamelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ecmnamelabel.Location = new System.Drawing.Point(284, 701);
+            this.ecmnamelabel.Name = "ecmnamelabel";
+            this.ecmnamelabel.Size = new System.Drawing.Size(89, 16);
+            this.ecmnamelabel.TabIndex = 40;
+            this.ecmnamelabel.Text = "Middle Name";
+            // 
+            // eclnametxtbox
+            // 
+            this.eclnametxtbox.Location = new System.Drawing.Point(479, 674);
+            this.eclnametxtbox.Name = "eclnametxtbox";
+            this.eclnametxtbox.Size = new System.Drawing.Size(171, 27);
+            this.eclnametxtbox.TabIndex = 41;
+            // 
+            // eclnamelabel
+            // 
+            this.eclnamelabel.AutoSize = true;
+            this.eclnamelabel.BackColor = System.Drawing.Color.Transparent;
+            this.eclnamelabel.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.eclnamelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.eclnamelabel.Location = new System.Drawing.Point(480, 701);
+            this.eclnamelabel.Name = "eclnamelabel";
+            this.eclnamelabel.Size = new System.Drawing.Size(72, 16);
+            this.eclnamelabel.TabIndex = 42;
+            this.eclnamelabel.Text = "Last Name";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(666, 674);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(78, 27);
+            this.textBox1.TabIndex = 43;
+            // 
+            // ecsnamelabel
+            // 
+            this.ecsnamelabel.AutoSize = true;
+            this.ecsnamelabel.BackColor = System.Drawing.Color.Transparent;
+            this.ecsnamelabel.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ecsnamelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ecsnamelabel.Location = new System.Drawing.Point(666, 701);
+            this.ecsnamelabel.Name = "ecsnamelabel";
+            this.ecsnamelabel.Size = new System.Drawing.Size(42, 16);
+            this.ecsnamelabel.TabIndex = 44;
+            this.ecsnamelabel.Text = "Suffix";
+            // 
+            // snamelabel
+            // 
+            this.snamelabel.AutoSize = true;
+            this.snamelabel.BackColor = System.Drawing.Color.Transparent;
+            this.snamelabel.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.snamelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.snamelabel.Location = new System.Drawing.Point(665, 152);
+            this.snamelabel.Name = "snamelabel";
+            this.snamelabel.Size = new System.Drawing.Size(42, 16);
+            this.snamelabel.TabIndex = 48;
+            this.snamelabel.Text = "Suffix";
+            // 
+            // lnamelabel
+            // 
+            this.lnamelabel.AutoSize = true;
+            this.lnamelabel.BackColor = System.Drawing.Color.Transparent;
+            this.lnamelabel.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lnamelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lnamelabel.Location = new System.Drawing.Point(478, 152);
+            this.lnamelabel.Name = "lnamelabel";
+            this.lnamelabel.Size = new System.Drawing.Size(72, 16);
+            this.lnamelabel.TabIndex = 47;
+            this.lnamelabel.Text = "Last Name";
+            // 
+            // mnamelabel
+            // 
+            this.mnamelabel.AutoSize = true;
+            this.mnamelabel.BackColor = System.Drawing.Color.Transparent;
+            this.mnamelabel.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.mnamelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.mnamelabel.Location = new System.Drawing.Point(283, 152);
+            this.mnamelabel.Name = "mnamelabel";
+            this.mnamelabel.Size = new System.Drawing.Size(89, 16);
+            this.mnamelabel.TabIndex = 46;
+            this.mnamelabel.Text = "Middle Name";
+            // 
+            // fnamelabel
+            // 
+            this.fnamelabel.AutoSize = true;
+            this.fnamelabel.BackColor = System.Drawing.Color.Transparent;
+            this.fnamelabel.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.fnamelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.fnamelabel.Location = new System.Drawing.Point(50, 153);
+            this.fnamelabel.Name = "fnamelabel";
+            this.fnamelabel.Size = new System.Drawing.Size(75, 16);
+            this.fnamelabel.TabIndex = 45;
+            this.fnamelabel.Text = "First Name";
+            // 
+            // ephoneconlabel
+            // 
+            this.ephoneconlabel.AutoSize = true;
+            this.ephoneconlabel.BackColor = System.Drawing.Color.Transparent;
+            this.ephoneconlabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ephoneconlabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ephoneconlabel.Location = new System.Drawing.Point(53, 729);
+            this.ephoneconlabel.Name = "ephoneconlabel";
+            this.ephoneconlabel.Size = new System.Drawing.Size(311, 24);
+            this.ephoneconlabel.TabIndex = 49;
+            this.ephoneconlabel.Text = "EMERGENCY CONTACT PHONE";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(51, 756);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(215, 27);
+            this.textBox2.TabIndex = 50;
             // 
             // Form1
             // 
@@ -341,7 +535,28 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1076, 753);
+            this.ClientSize = new System.Drawing.Size(1076, 861);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.ephoneconlabel);
+            this.Controls.Add(this.snamelabel);
+            this.Controls.Add(this.lnamelabel);
+            this.Controls.Add(this.mnamelabel);
+            this.Controls.Add(this.fnamelabel);
+            this.Controls.Add(this.ecsnamelabel);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.eclnamelabel);
+            this.Controls.Add(this.eclnametxtbox);
+            this.Controls.Add(this.ecmnamelabel);
+            this.Controls.Add(this.ecmnametxtbox);
+            this.Controls.Add(this.ecfnamelabel);
+            this.Controls.Add(this.econtacttxtbox);
+            this.Controls.Add(this.econnamelabel);
+            this.Controls.Add(this.q3label);
+            this.Controls.Add(this.q3txtbox);
+            this.Controls.Add(this.q2txtbox);
+            this.Controls.Add(this.q2label);
+            this.Controls.Add(this.q1label);
+            this.Controls.Add(this.q1txtbox);
             this.Controls.Add(this.pzipclabel);
             this.Controls.Add(this.sprovlabel);
             this.Controls.Add(this.citylabel);
@@ -365,10 +580,7 @@
             this.Controls.Add(this.lnametxtbox);
             this.Controls.Add(this.mnametxtbox);
             this.Controls.Add(this.fnametxtbox);
-            this.Controls.Add(this.snamelabel);
-            this.Controls.Add(this.lnamelabel);
-            this.Controls.Add(this.mnamelabel);
-            this.Controls.Add(this.fnamelabel);
+            this.Controls.Add(this.fullnamelabel);
             this.Controls.Add(this.CTLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -385,10 +597,7 @@
         #endregion
 
         private Label CTLabel;
-        private Label fnamelabel;
-        private Label mnamelabel;
-        private Label lnamelabel;
-        private Label snamelabel;
+        private Label fullnamelabel;
         private TextBox fnametxtbox;
         private TextBox mnametxtbox;
         private TextBox lnametxtbox;
@@ -412,5 +621,26 @@
         private Label citylabel;
         private Label sprovlabel;
         private Label pzipclabel;
+        private TextBox q1txtbox;
+        private Label q1label;
+        private Label q2label;
+        private TextBox q2txtbox;
+        private TextBox q3txtbox;
+        private Label q3label;
+        private Label econnamelabel;
+        private TextBox econtacttxtbox;
+        private Label ecfnamelabel;
+        private TextBox ecmnametxtbox;
+        private Label ecmnamelabel;
+        private TextBox eclnametxtbox;
+        private Label eclnamelabel;
+        private TextBox textBox1;
+        private Label ecsnamelabel;
+        private Label snamelabel;
+        private Label lnamelabel;
+        private Label mnamelabel;
+        private Label fnamelabel;
+        private Label ephoneconlabel;
+        private TextBox textBox2;
     }
 }
