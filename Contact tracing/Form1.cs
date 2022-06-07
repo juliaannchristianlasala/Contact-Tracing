@@ -32,6 +32,10 @@ namespace Contact_tracing
             file.WriteLine("Emergency Contact Name: " + ecfnametxtbox.Text + " " + ecmnametxtbox.Text + " " + eclnametxtbox.Text + " " + ecsnametxtbox.Text);
             file.WriteLine("Contact Number: " + ephonecontxtbox.Text);
             file.WriteLine("Relationship: " + ecrelationtxtbox.Text);
+            file.WriteLine("");
+            file.WriteLine(" We will not, in any circumstances, share your personal information with other individuals or organizations without your permission, including public organizations, corporations or individuals, except when applicable by law.");
+            file.WriteLine("Agree or Disagree?");
+            file.WriteLine("Answer: " + ansconsenttxtbox.Text);
             file.Close();
         }
     }
