@@ -12,6 +12,8 @@ namespace Contact_tracing
             StreamWriter file = new StreamWriter(@"C:\Users\JULIA-ANN\Desktop\Contact Tracing.txt");
             file.WriteLine("CONTACT TRACING");
             file.WriteLine("Date: " + datetimetxt.Text);
+            file.WriteLine("");
+            file.WriteLine("BASIC INFORMATION");
             file.WriteLine("Name: " + fnametxtbox.Text + " " + mnametxtbox.Text + " " + lnametxtbox.Text + " " + snametxtbox.Text);
             file.WriteLine("Age: " + agenumericud.Text);
             file.WriteLine("Sex: " + sextxtbox.Text);
@@ -25,6 +27,11 @@ namespace Contact_tracing
             file.WriteLine("Answer: " + q2txtbox.Text);
             file.WriteLine("Are you currently experiencing symptoms (cough,shortness of breath, fever)");
             file.WriteLine("Answer: " + q3txtbox.Text);
+            file.WriteLine("");
+            file.WriteLine("EMERGENCY CONTACT");
+            file.WriteLine("Emergency Contact Name: " + ecfnametxtbox.Text + " " + ecmnametxtbox.Text + " " + eclnametxtbox.Text + " " + ecsnametxtbox.Text);
+            file.WriteLine("Contact Number: " + ephonecontxtbox.Text);
+            file.WriteLine("Relationship: " + ecrelationtxtbox.Text);
             file.Close();
         }
     }

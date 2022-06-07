@@ -61,7 +61,7 @@
             this.q3txtbox = new System.Windows.Forms.TextBox();
             this.q3label = new System.Windows.Forms.Label();
             this.econnamelabel = new System.Windows.Forms.Label();
-            this.econtacttxtbox = new System.Windows.Forms.TextBox();
+            this.ecfnametxtbox = new System.Windows.Forms.TextBox();
             this.ecfnamelabel = new System.Windows.Forms.Label();
             this.ecmnametxtbox = new System.Windows.Forms.TextBox();
             this.ecmnamelabel = new System.Windows.Forms.Label();
@@ -393,12 +393,12 @@
             this.econnamelabel.TabIndex = 36;
             this.econnamelabel.Text = "EMERGENCY CONTACT NAME";
             // 
-            // econtacttxtbox
+            // ecfnametxtbox
             // 
-            this.econtacttxtbox.Location = new System.Drawing.Point(50, 674);
-            this.econtacttxtbox.Name = "econtacttxtbox";
-            this.econtacttxtbox.Size = new System.Drawing.Size(215, 27);
-            this.econtacttxtbox.TabIndex = 37;
+            this.ecfnametxtbox.Location = new System.Drawing.Point(50, 674);
+            this.ecfnametxtbox.Name = "ecfnametxtbox";
+            this.ecfnametxtbox.Size = new System.Drawing.Size(215, 27);
+            this.ecfnametxtbox.TabIndex = 37;
             // 
             // ecfnamelabel
             // 
@@ -637,7 +637,7 @@
             this.Controls.Add(this.ecmnamelabel);
             this.Controls.Add(this.ecmnametxtbox);
             this.Controls.Add(this.ecfnamelabel);
-            this.Controls.Add(this.econtacttxtbox);
+            this.Controls.Add(this.ecfnametxtbox);
             this.Controls.Add(this.econnamelabel);
             this.Controls.Add(this.q3label);
             this.Controls.Add(this.q3txtbox);
@@ -717,7 +717,7 @@
         private TextBox q3txtbox;
         private Label q3label;
         private Label econnamelabel;
-        private TextBox econtacttxtbox;
+        private TextBox ecfnametxtbox;
         private Label ecfnamelabel;
         private TextBox ecmnametxtbox;
         private Label ecmnamelabel;
