@@ -37,6 +37,7 @@ namespace Contact_tracing
             file.WriteLine("Agree or Disagree?");
             file.WriteLine("Answer: " + ansconsenttxtbox.Text);
             file.Close();
+            MessageBox.Show("Thank you for filling out your information!");
         }
     }
 }

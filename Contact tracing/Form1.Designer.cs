@@ -174,7 +174,7 @@
             // datetimetxt
             // 
             this.datetimetxt.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.datetimetxt.Location = new System.Drawing.Point(779, 50);
+            this.datetimetxt.Location = new System.Drawing.Point(779, 63);
             this.datetimetxt.Name = "datetimetxt";
             this.datetimetxt.Size = new System.Drawing.Size(242, 30);
             this.datetimetxt.TabIndex = 14;
@@ -185,7 +185,7 @@
             this.datelabel.BackColor = System.Drawing.Color.Transparent;
             this.datelabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.datelabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.datelabel.Location = new System.Drawing.Point(782, 23);
+            this.datelabel.Location = new System.Drawing.Point(782, 37);
             this.datelabel.Name = "datelabel";
             this.datelabel.Size = new System.Drawing.Size(63, 24);
             this.datelabel.TabIndex = 15;
@@ -614,9 +614,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1076, 824);
+            this.ClientSize = new System.Drawing.Size(1071, 824);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ansconsentlabel);
             this.Controls.Add(this.ansconsenttxtbox);
