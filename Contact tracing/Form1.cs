@@ -39,5 +39,17 @@ namespace Contact_tracing
             file.Close();
             MessageBox.Show("Thank you for filling out your information!");
         }
+
+        private void AdminLoginbutton_Click(object sender, EventArgs e)
+        {
+            if (Admintxtbox.Text == "Contact Information") ;
+            {
+                this.Hide();
+                Form2 accessadmin = new Form2();
+                accessadmin.ShowDialog();
+                accessadmin = null;
+                this.Show();
+            }
+        }
     }
 }

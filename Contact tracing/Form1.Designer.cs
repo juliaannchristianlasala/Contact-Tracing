@@ -642,6 +642,7 @@
             this.AdminLoginbutton.TabIndex = 62;
             this.AdminLoginbutton.Text = "LOG IN";
             this.AdminLoginbutton.UseVisualStyleBackColor = false;
+            this.AdminLoginbutton.Click += new System.EventHandler(this.AdminLoginbutton_Click);
             // 
             // Form1
             // 
