@@ -82,6 +82,9 @@
             this.ansconsenttxtbox = new System.Windows.Forms.TextBox();
             this.ansconsentlabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Adminlabel = new System.Windows.Forms.Label();
+            this.Admintxtbox = new System.Windows.Forms.TextBox();
+            this.AdminLoginbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.agenumericud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -560,7 +563,7 @@
             this.consenttxtbox.BackColor = System.Drawing.SystemColors.Info;
             this.consenttxtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.consenttxtbox.ForeColor = System.Drawing.Color.Navy;
-            this.consenttxtbox.Location = new System.Drawing.Point(777, 465);
+            this.consenttxtbox.Location = new System.Drawing.Point(777, 460);
             this.consenttxtbox.Name = "consenttxtbox";
             this.consenttxtbox.ReadOnly = true;
             this.consenttxtbox.Size = new System.Drawing.Size(244, 146);
@@ -571,7 +574,7 @@
             // 
             this.submitbutton.BackColor = System.Drawing.Color.Thistle;
             this.submitbutton.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.submitbutton.Location = new System.Drawing.Point(779, 702);
+            this.submitbutton.Location = new System.Drawing.Point(779, 696);
             this.submitbutton.Name = "submitbutton";
             this.submitbutton.Size = new System.Drawing.Size(239, 81);
             this.submitbutton.TabIndex = 55;
@@ -581,7 +584,7 @@
             // 
             // ansconsenttxtbox
             // 
-            this.ansconsenttxtbox.Location = new System.Drawing.Point(777, 639);
+            this.ansconsenttxtbox.Location = new System.Drawing.Point(777, 647);
             this.ansconsenttxtbox.Name = "ansconsenttxtbox";
             this.ansconsenttxtbox.Size = new System.Drawing.Size(242, 27);
             this.ansconsenttxtbox.TabIndex = 56;
@@ -592,7 +595,7 @@
             this.ansconsentlabel.BackColor = System.Drawing.Color.Transparent;
             this.ansconsentlabel.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ansconsentlabel.ForeColor = System.Drawing.Color.MistyRose;
-            this.ansconsentlabel.Location = new System.Drawing.Point(779, 615);
+            this.ansconsentlabel.Location = new System.Drawing.Point(779, 623);
             this.ansconsentlabel.Name = "ansconsentlabel";
             this.ansconsentlabel.Size = new System.Drawing.Size(150, 22);
             this.ansconsentlabel.TabIndex = 57;
@@ -603,11 +606,42 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(777, 124);
+            this.pictureBox1.Location = new System.Drawing.Point(777, 121);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(247, 319);
+            this.pictureBox1.Size = new System.Drawing.Size(247, 316);
             this.pictureBox1.TabIndex = 58;
             this.pictureBox1.TabStop = false;
+            // 
+            // Adminlabel
+            // 
+            this.Adminlabel.AutoSize = true;
+            this.Adminlabel.BackColor = System.Drawing.Color.Transparent;
+            this.Adminlabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Adminlabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Adminlabel.Location = new System.Drawing.Point(52, 859);
+            this.Adminlabel.Name = "Adminlabel";
+            this.Adminlabel.Size = new System.Drawing.Size(185, 24);
+            this.Adminlabel.TabIndex = 60;
+            this.Adminlabel.Text = "FOR ADMIN ONLY";
+            // 
+            // Admintxtbox
+            // 
+            this.Admintxtbox.Location = new System.Drawing.Point(243, 858);
+            this.Admintxtbox.Name = "Admintxtbox";
+            this.Admintxtbox.Size = new System.Drawing.Size(260, 27);
+            this.Admintxtbox.TabIndex = 61;
+            // 
+            // AdminLoginbutton
+            // 
+            this.AdminLoginbutton.BackColor = System.Drawing.Color.Thistle;
+            this.AdminLoginbutton.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AdminLoginbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.AdminLoginbutton.Location = new System.Drawing.Point(518, 858);
+            this.AdminLoginbutton.Name = "AdminLoginbutton";
+            this.AdminLoginbutton.Size = new System.Drawing.Size(98, 30);
+            this.AdminLoginbutton.TabIndex = 62;
+            this.AdminLoginbutton.Text = "LOG IN";
+            this.AdminLoginbutton.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -617,7 +651,10 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1071, 824);
+            this.ClientSize = new System.Drawing.Size(1071, 911);
+            this.Controls.Add(this.AdminLoginbutton);
+            this.Controls.Add(this.Admintxtbox);
+            this.Controls.Add(this.Adminlabel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ansconsentlabel);
             this.Controls.Add(this.ansconsenttxtbox);
@@ -739,5 +776,8 @@
         private TextBox ansconsenttxtbox;
         private Label ansconsentlabel;
         private PictureBox pictureBox1;
+        private Label Adminlabel;
+        private TextBox Admintxtbox;
+        private Button AdminLoginbutton;
     }
 }

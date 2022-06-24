@@ -16,3 +16,4 @@ C:\Users\JULIA-ANN\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0
 C:\Users\JULIA-ANN\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact tracing.genruntimeconfig.cache
 C:\Users\JULIA-ANN\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\ref\Contact tracing.dll
 C:\Users\JULIA-ANN\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact_tracing.Properties.Resources.resources
+C:\Users\JULIA-ANN\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact_tracing.Form2.resources
