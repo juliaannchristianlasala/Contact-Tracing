@@ -9,7 +9,7 @@ namespace Contact_tracing
 
         private void submitbutton_Click(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\JULIA-ANN\source\repos\Contact Tracing Information\" + ".txt");
+            StreamWriter file = new StreamWriter(@"C:\Users\JULIA-ANN\source\repos\Contact Tracing Information\" + lnametxtbox.Text + ", " + fnametxtbox.Text + " " + mnametxtbox.Text + " " + snametxtbox.Text + ".txt");
             file.WriteLine("CONTACT TRACING");
             file.WriteLine("Date: " + datetimetxt.Text);
             file.WriteLine("");
@@ -38,6 +38,28 @@ namespace Contact_tracing
             file.WriteLine("Answer: " + ansconsenttxtbox.Text);
             file.Close();
             MessageBox.Show("Thank you for filling out your information!");
+            fnametxtbox.Text = "";
+            snametxtbox.Text = "";
+            mnametxtbox.Text = "";
+            lnametxtbox.Text = "";
+            agenumericud.Text = "0";
+            sextxtbox.Text = "";
+            pnumtxtbox.Text = "";
+            pemailltxtbox.Text = "";
+            sttxtbox.Text = "";
+            citytxtbox.Text = "";
+            sprovtxtbox.Text = "";
+            pzipctxtbox.Text = "";
+            q1txtbox.Text = "";
+            q2txtbox.Text = "";
+            q3txtbox.Text = "";
+            ecfnametxtbox.Text = "";
+            ecmnametxtbox.Text = "";
+            eclnametxtbox.Text = "";
+            ecsnametxtbox.Text = "";
+            ephonecontxtbox.Text = "";
+            ecrelationtxtbox.Text = "";
+            ansconsenttxtbox.Text = "";
         }
 
         private void AdminLoginbutton_Click(object sender, EventArgs e)
