@@ -175,6 +175,7 @@
             this.ShowAllDatabutton.TabIndex = 28;
             this.ShowAllDatabutton.Text = "SHOW";
             this.ShowAllDatabutton.UseVisualStyleBackColor = false;
+            this.ShowAllDatabutton.Click += new System.EventHandler(this.ShowAllDatabutton_Click);
             // 
             // Form2
             // 

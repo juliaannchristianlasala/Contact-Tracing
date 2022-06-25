@@ -9,7 +9,7 @@ namespace Contact_tracing
 
         private void submitbutton_Click(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\JULIA-ANN\Desktop\Contact Tracing.txt");
+            StreamWriter file = new StreamWriter(@"C:\Users\JULIA-ANN\source\repos\Contact Tracing Information\" + ".txt");
             file.WriteLine("CONTACT TRACING");
             file.WriteLine("Date: " + datetimetxt.Text);
             file.WriteLine("");
@@ -33,7 +33,7 @@ namespace Contact_tracing
             file.WriteLine("Contact Number: " + ephonecontxtbox.Text);
             file.WriteLine("Relationship: " + ecrelationtxtbox.Text);
             file.WriteLine("");
-            file.WriteLine(" We will not, in any circumstances, share your personal information with other individuals or organizations without your permission, including public organizations, corporations or individuals, except when applicable by law.");
+            file.WriteLine("We will not, in any circumstances, share your personal information with other individuals or organizations without your permission, including public organizations, corporations or individuals, except when applicable by law.");
             file.WriteLine("Agree or Disagree?");
             file.WriteLine("Answer: " + ansconsenttxtbox.Text);
             file.Close();
@@ -42,14 +42,15 @@ namespace Contact_tracing
 
         private void AdminLoginbutton_Click(object sender, EventArgs e)
         {
-            if (Admintxtbox.Text == "Contact Information") ;
+            if (Admintxtbox.Text == "Contact Information")
             {
-                this.Hide();
                 Form2 accessadmin = new Form2();
                 accessadmin.ShowDialog();
-                accessadmin = null;
-                this.Show();
             }
+            else
+            {
+                MessageBox.Show("Incorrect Password");
+            } 
         }
     }
 }

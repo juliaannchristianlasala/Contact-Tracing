@@ -16,5 +16,12 @@ namespace Contact_tracing
         {
             InitializeComponent();
         }
+
+        private void ShowAllDatabutton_Click(object sender, EventArgs e)
+        {
+            StreamReader Alldata = new StreamReader(@"C:\Users\JULIA-ANN\Desktop\Contact Tracing.txt");
+            String all = Alldata.ReadToEnd();
+            MessageBox.Show(all);
+        }
     }
 }
