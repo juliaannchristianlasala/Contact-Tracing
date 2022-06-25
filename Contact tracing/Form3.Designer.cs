@@ -30,27 +30,44 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.datagathered = new System.Windows.Forms.Label();
+            this.alldglabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // datagathered
             // 
             this.datagathered.AutoSize = true;
             this.datagathered.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.datagathered.Location = new System.Drawing.Point(26, 61);
+            this.datagathered.Location = new System.Drawing.Point(62, 114);
             this.datagathered.Name = "datagathered";
-            this.datagathered.Size = new System.Drawing.Size(45, 24);
+            this.datagathered.Size = new System.Drawing.Size(0, 24);
             this.datagathered.TabIndex = 0;
-            this.datagathered.Text = "       ";
             this.datagathered.Click += new System.EventHandler(this.gathereddata_Click);
+            // 
+            // alldglabel
+            // 
+            this.alldglabel.AutoSize = true;
+            this.alldglabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.alldglabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.alldglabel.Font = new System.Drawing.Font("Elephant", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.alldglabel.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.alldglabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.alldglabel.Location = new System.Drawing.Point(129, 25);
+            this.alldglabel.Name = "alldglabel";
+            this.alldglabel.Size = new System.Drawing.Size(803, 47);
+            this.alldglabel.TabIndex = 2;
+            this.alldglabel.Text = "All Data Gathered from Contact Tracing";
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(644, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1039, 744);
             this.Controls.Add(this.datagathered);
+            this.Controls.Add(this.alldglabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "All Data Gathered";
@@ -62,5 +79,7 @@
         #endregion
 
         private Label datagathered;
+        private Label alldglabel;
+        private PictureBox InfoBgOne;
     }
 }
