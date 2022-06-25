@@ -36,6 +36,7 @@ namespace Contact_tracing
             file.WriteLine("We will not, in any circumstances, share your personal information with other individuals or organizations without your permission, including public organizations, corporations or individuals, except when applicable by law.");
             file.WriteLine("Agree or Disagree?");
             file.WriteLine("Answer: " + ansconsenttxtbox.Text);
+            file.WriteLine("-");
             file.Close();
             MessageBox.Show("Thank you for filling out your information!");
             fnametxtbox.Text = "";
@@ -66,6 +67,7 @@ namespace Contact_tracing
         {
             if (Admintxtbox.Text == "Contact Information")
             {
+                this.Hide();
                 Form2 accessadmin = new Form2();
                 accessadmin.ShowDialog();
             }

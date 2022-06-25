@@ -19,9 +19,11 @@ namespace Contact_tracing
 
         private void ShowAllDatabutton_Click(object sender, EventArgs e)
         {
-            StreamReader Alldata = new StreamReader(@"C:\Users\JULIA-ANN\Desktop\Contact Tracing.txt");
-            String all = Alldata.ReadToEnd();
-            MessageBox.Show(all);
+            this.Hide();
+            Form3 alldata = new Form3();
+            alldata.ShowDialog();
+            alldata = null;
+            this.Show();
         }
     }
 }
