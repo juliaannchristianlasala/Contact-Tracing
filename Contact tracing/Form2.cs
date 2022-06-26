@@ -39,6 +39,7 @@ namespace Contact_tracing
                 string datadates = File.ReadAllText(data);
                 if (datadates.Contains(fdates))
                 {
+                    this.Hide();
                     alldata++;
                     var date = datadates.Substring(0, datadates.IndexOf(fdates));
                     MessageBox.Show(datadates);
@@ -48,10 +49,13 @@ namespace Contact_tracing
             if (alldata != 0)
             {
                 MessageBox.Show("That's all of the data collected on this date");
+                this.Show();
             }
             else
             {
+                this.Hide();
                 MessageBox.Show("No data was found on this date");
+                this.Show();
             }
         }
     }
