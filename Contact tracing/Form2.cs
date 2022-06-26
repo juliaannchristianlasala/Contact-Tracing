@@ -41,16 +41,17 @@ namespace Contact_tracing
                 {
                     alldata++;
                     var date = datadates.Substring(0, datadates.IndexOf(fdates));
+                    MessageBox.Show(datadates);
                 }
             }
 
             if (alldata != 0)
             {
-                MessageBox.Show("All data has been found");
+                MessageBox.Show("That's all of the data collected on this date");
             }
             else
             {
-                MessageBox.Show("No data was found");
+                MessageBox.Show("No data was found on this date");
             }
         }
     }
