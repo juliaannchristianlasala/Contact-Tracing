@@ -42,6 +42,8 @@
             this.ShowAllDatabutton = new System.Windows.Forms.Button();
             this.sdatelabel = new System.Windows.Forms.Label();
             this.searchdate = new System.Windows.Forms.DateTimePicker();
+            this.NsearchLabel = new System.Windows.Forms.Label();
+            this.Nsearchtxtbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBgOne)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBgTwo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBgThree)).BeginInit();
@@ -200,12 +202,33 @@
             this.searchdate.TabIndex = 30;
             this.searchdate.ValueChanged += new System.EventHandler(this.searchdate_ValueChanged);
             // 
+            // NsearchLabel
+            // 
+            this.NsearchLabel.AutoSize = true;
+            this.NsearchLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.NsearchLabel.Font = new System.Drawing.Font("Georgia", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NsearchLabel.Location = new System.Drawing.Point(214, 481);
+            this.NsearchLabel.Name = "NsearchLabel";
+            this.NsearchLabel.Size = new System.Drawing.Size(255, 38);
+            this.NsearchLabel.TabIndex = 31;
+            this.NsearchLabel.Text = "Search by Name";
+            // 
+            // Nsearchtxtbox
+            // 
+            this.Nsearchtxtbox.Location = new System.Drawing.Point(97, 538);
+            this.Nsearchtxtbox.Name = "Nsearchtxtbox";
+            this.Nsearchtxtbox.Size = new System.Drawing.Size(473, 27);
+            this.Nsearchtxtbox.TabIndex = 32;
+            this.Nsearchtxtbox.TextChanged += new System.EventHandler(this.Nsearchtxtbox_TextChanged);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(675, 638);
+            this.Controls.Add(this.Nsearchtxtbox);
+            this.Controls.Add(this.NsearchLabel);
             this.Controls.Add(this.searchdate);
             this.Controls.Add(this.sdatelabel);
             this.Controls.Add(this.ShowAllDatabutton);
@@ -247,5 +270,7 @@
         private Button ShowAllDatabutton;
         private Label sdatelabel;
         private DateTimePicker searchdate;
+        private Label NsearchLabel;
+        private TextBox Nsearchtxtbox;
     }
 }

@@ -58,5 +58,10 @@ namespace Contact_tracing
                 this.Show();
             }
         }
+
+        private void Nsearchtxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
