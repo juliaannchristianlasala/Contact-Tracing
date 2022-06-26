@@ -40,6 +40,8 @@
             this.InfoBgThree = new System.Windows.Forms.PictureBox();
             this.AllDataLabel = new System.Windows.Forms.Label();
             this.ShowAllDatabutton = new System.Windows.Forms.Button();
+            this.sdatelabel = new System.Windows.Forms.Label();
+            this.searchdate = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBgOne)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBgTwo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBgThree)).BeginInit();
@@ -161,7 +163,7 @@
             this.AllDataLabel.Font = new System.Drawing.Font("Georgia", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AllDataLabel.Location = new System.Drawing.Point(18, 167);
             this.AllDataLabel.Name = "AllDataLabel";
-            this.AllDataLabel.Size = new System.Drawing.Size(614, 39);
+            this.AllDataLabel.Size = new System.Drawing.Size(602, 38);
             this.AllDataLabel.TabIndex = 27;
             this.AllDataLabel.Text = "All Data Gathered from Contact Tracing";
             // 
@@ -177,12 +179,35 @@
             this.ShowAllDatabutton.UseVisualStyleBackColor = false;
             this.ShowAllDatabutton.Click += new System.EventHandler(this.ShowAllDatabutton_Click);
             // 
+            // sdatelabel
+            // 
+            this.sdatelabel.AutoSize = true;
+            this.sdatelabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.sdatelabel.Font = new System.Drawing.Font("Georgia", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sdatelabel.Location = new System.Drawing.Point(225, 321);
+            this.sdatelabel.Name = "sdatelabel";
+            this.sdatelabel.Size = new System.Drawing.Size(237, 38);
+            this.sdatelabel.TabIndex = 29;
+            this.sdatelabel.Text = "Search by Date";
+            // 
+            // searchdate
+            // 
+            this.searchdate.CalendarFont = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.searchdate.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.searchdate.Location = new System.Drawing.Point(217, 378);
+            this.searchdate.Name = "searchdate";
+            this.searchdate.Size = new System.Drawing.Size(252, 30);
+            this.searchdate.TabIndex = 30;
+            this.searchdate.ValueChanged += new System.EventHandler(this.searchdate_ValueChanged);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(675, 638);
+            this.Controls.Add(this.searchdate);
+            this.Controls.Add(this.sdatelabel);
             this.Controls.Add(this.ShowAllDatabutton);
             this.Controls.Add(this.AllDataLabel);
             this.Controls.Add(this.InfoBgThree);
@@ -220,5 +245,7 @@
         private PictureBox InfoBgThree;
         private Label AllDataLabel;
         private Button ShowAllDatabutton;
+        private Label sdatelabel;
+        private DateTimePicker searchdate;
     }
 }

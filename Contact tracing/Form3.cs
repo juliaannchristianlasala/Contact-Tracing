@@ -17,13 +17,14 @@ namespace Contact_tracing
             InitializeComponent();
 
             var Datafiles = Directory.GetFiles(@"C:\Users\JULIA-ANN\source\repos\Contact Tracing Information\");
+            
             foreach (string Datafile in Datafiles)
             {
             string alldata = File.ReadAllText(Datafile);
             datagathered.Text = datagathered.Text + alldata.ToString() + "\n";
             }
         }
-
+         
         private void gathereddata_Click(object sender, EventArgs e)
         {
 

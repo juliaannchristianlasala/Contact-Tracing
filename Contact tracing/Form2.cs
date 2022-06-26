@@ -25,5 +25,28 @@ namespace Contact_tracing
             alldata = null;
             this.Show();
         }
+
+        private void searchdate_ValueChanged(object sender, EventArgs e)
+        {
+            var filedates = Directory.GetFiles(@"C:\Users\JULIA-ANN\source\repos\Contact Tracing Information\");
+
+            List<string> listofdates = new List<string>();
+            string fdates = searchdate.Text;
+            int alldates = 0;
+
+            foreach (string data in filedates)
+            {
+                string datadates = File.ReadAllText(data);
+                if (datadates.Contains(fdates))
+                {
+                    alldates++;
+                    var date = datadates.Substring(0, datadates.IndexOf(fdates));
+                }
+            }
+            if (alldates != 0)
+            {
+                MessageBox.Show("All Data Found");
+            }
+        }
     }
 }
