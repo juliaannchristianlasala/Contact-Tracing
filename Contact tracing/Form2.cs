@@ -32,20 +32,25 @@ namespace Contact_tracing
 
             List<string> listofdates = new List<string>();
             string fdates = searchdate.Text;
-            int alldates = 0;
+            int alldata = 0;
 
             foreach (string data in filedates)
             {
                 string datadates = File.ReadAllText(data);
                 if (datadates.Contains(fdates))
                 {
-                    alldates++;
+                    alldata++;
                     var date = datadates.Substring(0, datadates.IndexOf(fdates));
                 }
             }
-            if (alldates != 0)
+
+            if (alldata != 0)
             {
-                MessageBox.Show("All Data Found");
+                MessageBox.Show("All data has been found");
+            }
+            else
+            {
+                MessageBox.Show("No data was found");
             }
         }
     }
