@@ -9,7 +9,7 @@ namespace Contact_tracing
 
         private void submitbutton_Click(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\JULIA-ANN\source\repos\Contact Tracing Information\" + lnametxtbox.Text + ", " + fnametxtbox.Text + " " + mnametxtbox.Text + " " + snametxtbox.Text + ".txt");
+            StreamWriter file = new StreamWriter(@"C:\Users\JULIA-ANN\source\repos\Contact Tracing Information\" + fnametxtbox.Text + " " + mnametxtbox.Text + " " + lnametxtbox.Text + " "+ snametxtbox.Text + ".txt");
             file.WriteLine("CONTACT TRACING");
             file.WriteLine("Date: " + datetimetxt.Text);
             file.WriteLine("");

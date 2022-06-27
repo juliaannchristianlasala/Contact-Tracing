@@ -63,5 +63,23 @@ namespace Contact_tracing
         {
 
         }
+
+        private void Nsearchbutton_Click(object sender, EventArgs e)
+        {
+
+            var filenames = Directory.GetFiles(@"C:\Users\JULIA-ANN\source\repos\Contact Tracing Information\");
+            int names = 0;
+            string searchname = Nsearchtxtbox.Text;
+            foreach (var datanames in filenames)
+            {
+                if (datanames.Contains(searchname))
+                {
+                    searchname = File.ReadAllText(datanames);
+                    MessageBox.Show(searchname);
+                } 
+
+
+            }
+        }
     }
 }

@@ -44,6 +44,7 @@
             this.searchdate = new System.Windows.Forms.DateTimePicker();
             this.NsearchLabel = new System.Windows.Forms.Label();
             this.Nsearchtxtbox = new System.Windows.Forms.TextBox();
+            this.Nsearchbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBgOne)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBgTwo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBgThree)).BeginInit();
@@ -215,11 +216,22 @@
             // 
             // Nsearchtxtbox
             // 
-            this.Nsearchtxtbox.Location = new System.Drawing.Point(97, 538);
+            this.Nsearchtxtbox.Location = new System.Drawing.Point(46, 539);
             this.Nsearchtxtbox.Name = "Nsearchtxtbox";
-            this.Nsearchtxtbox.Size = new System.Drawing.Size(473, 27);
+            this.Nsearchtxtbox.Size = new System.Drawing.Size(448, 27);
             this.Nsearchtxtbox.TabIndex = 32;
             this.Nsearchtxtbox.TextChanged += new System.EventHandler(this.Nsearchtxtbox_TextChanged);
+            // 
+            // Nsearchbutton
+            // 
+            this.Nsearchbutton.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Nsearchbutton.Location = new System.Drawing.Point(509, 538);
+            this.Nsearchbutton.Name = "Nsearchbutton";
+            this.Nsearchbutton.Size = new System.Drawing.Size(94, 29);
+            this.Nsearchbutton.TabIndex = 33;
+            this.Nsearchbutton.Text = "Search";
+            this.Nsearchbutton.UseVisualStyleBackColor = true;
+            this.Nsearchbutton.Click += new System.EventHandler(this.Nsearchbutton_Click);
             // 
             // Form2
             // 
@@ -227,6 +239,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(675, 638);
+            this.Controls.Add(this.Nsearchbutton);
             this.Controls.Add(this.Nsearchtxtbox);
             this.Controls.Add(this.NsearchLabel);
             this.Controls.Add(this.searchdate);
@@ -272,5 +285,6 @@
         private DateTimePicker searchdate;
         private Label NsearchLabel;
         private TextBox Nsearchtxtbox;
+        private Button Nsearchbutton;
     }
 }
