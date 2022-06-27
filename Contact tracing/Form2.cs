@@ -68,17 +68,18 @@ namespace Contact_tracing
         {
 
             var filenames = Directory.GetFiles(@"C:\Users\JULIA-ANN\source\repos\Contact Tracing Information\");
-            int names = 0;
+
             string searchname = Nsearchtxtbox.Text;
             foreach (var datanames in filenames)
             {
                 if (datanames.Contains(searchname))
                 {
+                    this.Hide();
                     searchname = File.ReadAllText(datanames);
+                    Nsearchtxtbox.Text = "";
                     MessageBox.Show(searchname);
-                } 
-
-
+                    this.Show();
+                }
             }
         }
     }
