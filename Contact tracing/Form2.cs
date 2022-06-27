@@ -42,13 +42,13 @@ namespace Contact_tracing
                     this.Hide();
                     alldata++;
                     var date = datadates.Substring(0, datadates.IndexOf(fdates));
+                    MessageBox.Show("All of the data collected on this date has been found");
                     MessageBox.Show(datadates);
                 }
             }
 
             if (alldata != 0)
             {
-                MessageBox.Show("That's all of the data collected on this date");
                 this.Show();
             }
             else
@@ -76,8 +76,10 @@ namespace Contact_tracing
                 {
                     this.Hide();
                     searchname = File.ReadAllText(datanames);
-                    Nsearchtxtbox.Text = "";
+                    MessageBox.Show("Results has been Found");
                     MessageBox.Show(searchname);
+
+                    Nsearchtxtbox.Text = "";
                     this.Show();
                 }
             }

@@ -75,6 +75,7 @@ namespace Contact_tracing
             else
             {
                 MessageBox.Show("Incorrect Password");
+                Admintxtbox.Text = "";
             } 
         }
     }
