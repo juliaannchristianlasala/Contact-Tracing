@@ -21,3 +21,4 @@ C:\Users\JULIA-ANN\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0
 C:\Users\JULIA-ANN\source\repos\Contact tracing\Contact tracing\bin\Debug\net6.0-windows\QRCoder.dll
 C:\Users\JULIA-ANN\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact_tracing.Form4.resources
 C:\Users\JULIA-ANN\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact tracing.csproj.CopyComplete
+C:\Users\JULIA-ANN\source\repos\Contact tracing\Contact tracing\obj\Debug\net6.0-windows\Contact_tracing.Form5.resources

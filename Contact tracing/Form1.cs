@@ -91,5 +91,13 @@ namespace Contact_tracing
             qrgenerate.ShowDialog();
             this.Show();
         }
+
+        private void QRSbutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form5 qrscan = new Form5();
+            qrscan.ShowDialog();
+            this.Show();
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QRCoder;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,14 @@ namespace Contact_tracing
         public Form4()
         {
             InitializeComponent();
+        }
+
+        private void qrgenbutton_Click(object sender, EventArgs e)
+        {
+            QRCodeGenerator qrgen = new QRCodeGenerator();
+            QRCodeData infos = qrgen.CreateQrCode(qrgentxtbox.Text, QRCodeGenerator.ECCLevel.Q);
+            QRCode gcode = new QRCode(infos);
+            qrpicbox.Image = gcode.GetGraphic(10);
         }
     }
 }

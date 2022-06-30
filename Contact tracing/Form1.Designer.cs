@@ -85,7 +85,8 @@
             this.Adminlabel = new System.Windows.Forms.Label();
             this.Admintxtbox = new System.Windows.Forms.TextBox();
             this.AdminLoginbutton = new System.Windows.Forms.Button();
-            this.QRCbutton = new System.Windows.Forms.Button();
+            this.QRGbutton = new System.Windows.Forms.Button();
+            this.QRSbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.agenumericud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -646,15 +647,25 @@
             this.AdminLoginbutton.UseVisualStyleBackColor = false;
             this.AdminLoginbutton.Click += new System.EventHandler(this.AdminLoginbutton_Click);
             // 
-            // QRCbutton
+            // QRGbutton
             // 
-            this.QRCbutton.Location = new System.Drawing.Point(779, 854);
-            this.QRCbutton.Name = "QRCbutton";
-            this.QRCbutton.Size = new System.Drawing.Size(150, 29);
-            this.QRCbutton.TabIndex = 63;
-            this.QRCbutton.Text = "qrcode";
-            this.QRCbutton.UseVisualStyleBackColor = true;
-            this.QRCbutton.Click += new System.EventHandler(this.QRCbutton_Click);
+            this.QRGbutton.Location = new System.Drawing.Point(781, 854);
+            this.QRGbutton.Name = "QRGbutton";
+            this.QRGbutton.Size = new System.Drawing.Size(115, 29);
+            this.QRGbutton.TabIndex = 63;
+            this.QRGbutton.Text = "qrcode";
+            this.QRGbutton.UseVisualStyleBackColor = true;
+            this.QRGbutton.Click += new System.EventHandler(this.QRCbutton_Click);
+            // 
+            // QRSbutton
+            // 
+            this.QRSbutton.Location = new System.Drawing.Point(903, 854);
+            this.QRSbutton.Name = "QRSbutton";
+            this.QRSbutton.Size = new System.Drawing.Size(111, 29);
+            this.QRSbutton.TabIndex = 64;
+            this.QRSbutton.Text = "qrscan";
+            this.QRSbutton.UseVisualStyleBackColor = true;
+            this.QRSbutton.Click += new System.EventHandler(this.QRSbutton_Click);
             // 
             // Form1
             // 
@@ -665,7 +676,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1071, 911);
-            this.Controls.Add(this.QRCbutton);
+            this.Controls.Add(this.QRSbutton);
+            this.Controls.Add(this.QRGbutton);
             this.Controls.Add(this.AdminLoginbutton);
             this.Controls.Add(this.Admintxtbox);
             this.Controls.Add(this.Adminlabel);
@@ -793,6 +805,7 @@
         private Label Adminlabel;
         private TextBox Admintxtbox;
         private Button AdminLoginbutton;
-        private Button QRCbutton;
+        private Button QRGbutton;
+        private Button QRSbutton;
     }
 }
