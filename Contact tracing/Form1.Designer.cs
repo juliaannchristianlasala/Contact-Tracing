@@ -85,6 +85,7 @@
             this.Adminlabel = new System.Windows.Forms.Label();
             this.Admintxtbox = new System.Windows.Forms.TextBox();
             this.AdminLoginbutton = new System.Windows.Forms.Button();
+            this.QRCbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.agenumericud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -142,6 +143,7 @@
             this.snametxtbox.Name = "snametxtbox";
             this.snametxtbox.Size = new System.Drawing.Size(78, 27);
             this.snametxtbox.TabIndex = 8;
+            this.snametxtbox.TextChanged += new System.EventHandler(this.snametxtbox_TextChanged);
             // 
             // agelabel
             // 
@@ -644,6 +646,16 @@
             this.AdminLoginbutton.UseVisualStyleBackColor = false;
             this.AdminLoginbutton.Click += new System.EventHandler(this.AdminLoginbutton_Click);
             // 
+            // QRCbutton
+            // 
+            this.QRCbutton.Location = new System.Drawing.Point(779, 854);
+            this.QRCbutton.Name = "QRCbutton";
+            this.QRCbutton.Size = new System.Drawing.Size(150, 29);
+            this.QRCbutton.TabIndex = 63;
+            this.QRCbutton.Text = "qrcode";
+            this.QRCbutton.UseVisualStyleBackColor = true;
+            this.QRCbutton.Click += new System.EventHandler(this.QRCbutton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -653,6 +665,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1071, 911);
+            this.Controls.Add(this.QRCbutton);
             this.Controls.Add(this.AdminLoginbutton);
             this.Controls.Add(this.Admintxtbox);
             this.Controls.Add(this.Adminlabel);
@@ -780,5 +793,6 @@
         private Label Adminlabel;
         private TextBox Admintxtbox;
         private Button AdminLoginbutton;
+        private Button QRCbutton;
     }
 }

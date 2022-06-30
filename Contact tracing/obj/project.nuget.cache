@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "8/HApUXUOw1H2hohvCPUGmjoUivXBSYtCzN1IBxxlkbHj1SBEfAACWKeA/0X2x6KUyudEpgtGmfuICN9c9TGcw==",
+  "dgSpecHash": "FTIg8fvIpLP4MKRgwkSIFdv74M01p8z6U9gNhLNiIoMK+FS+JQCEJRjcasA1KVaQol2lmsPcyqAL9CEeWa78OQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\JULIA-ANN\\source\\repos\\Contact tracing\\Contact tracing\\Contact tracing.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\JULIA-ANN\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\JULIA-ANN\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
+    "C:\\Users\\JULIA-ANN\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

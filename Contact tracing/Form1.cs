@@ -78,5 +78,18 @@ namespace Contact_tracing
                 Admintxtbox.Text = "";
             } 
         }
+
+        private void snametxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void QRCbutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form4 qrgenerate = new Form4();
+            qrgenerate.ShowDialog();
+            this.Show();
+        }
     }
 }

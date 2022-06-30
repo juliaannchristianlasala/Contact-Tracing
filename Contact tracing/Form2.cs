@@ -84,5 +84,10 @@ namespace Contact_tracing
                 }
             }
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

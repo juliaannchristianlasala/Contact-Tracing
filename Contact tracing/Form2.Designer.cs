@@ -260,6 +260,7 @@
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Information Desk";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.InfoBgOne)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBgTwo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfoBgThree)).EndInit();

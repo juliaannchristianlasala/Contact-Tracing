@@ -29,5 +29,10 @@ namespace Contact_tracing
         {
 
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
