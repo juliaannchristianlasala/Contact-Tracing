@@ -127,6 +127,7 @@
             this.Name = "Form5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CONTACT TRACING: Scan QR Code";
+            this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ScanPicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BgPicbox)).EndInit();
             this.ResumeLayout(false);
