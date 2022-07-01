@@ -87,6 +87,8 @@
             this.AdminLoginbutton = new System.Windows.Forms.Button();
             this.QRGbutton = new System.Windows.Forms.Button();
             this.QRSbutton = new System.Windows.Forms.Button();
+            this.qrcgeneratelabel = new System.Windows.Forms.Label();
+            this.qrcscanlabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.agenumericud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -621,7 +623,7 @@
             this.Adminlabel.BackColor = System.Drawing.Color.Transparent;
             this.Adminlabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Adminlabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Adminlabel.Location = new System.Drawing.Point(52, 859);
+            this.Adminlabel.Location = new System.Drawing.Point(55, 998);
             this.Adminlabel.Name = "Adminlabel";
             this.Adminlabel.Size = new System.Drawing.Size(185, 24);
             this.Adminlabel.TabIndex = 60;
@@ -629,7 +631,7 @@
             // 
             // Admintxtbox
             // 
-            this.Admintxtbox.Location = new System.Drawing.Point(243, 858);
+            this.Admintxtbox.Location = new System.Drawing.Point(246, 997);
             this.Admintxtbox.Name = "Admintxtbox";
             this.Admintxtbox.Size = new System.Drawing.Size(260, 27);
             this.Admintxtbox.TabIndex = 61;
@@ -639,7 +641,7 @@
             this.AdminLoginbutton.BackColor = System.Drawing.Color.Thistle;
             this.AdminLoginbutton.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AdminLoginbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.AdminLoginbutton.Location = new System.Drawing.Point(518, 858);
+            this.AdminLoginbutton.Location = new System.Drawing.Point(521, 997);
             this.AdminLoginbutton.Name = "AdminLoginbutton";
             this.AdminLoginbutton.Size = new System.Drawing.Size(98, 30);
             this.AdminLoginbutton.TabIndex = 62;
@@ -649,23 +651,49 @@
             // 
             // QRGbutton
             // 
-            this.QRGbutton.Location = new System.Drawing.Point(781, 854);
+            this.QRGbutton.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.QRGbutton.Location = new System.Drawing.Point(56, 870);
             this.QRGbutton.Name = "QRGbutton";
-            this.QRGbutton.Size = new System.Drawing.Size(115, 29);
+            this.QRGbutton.Size = new System.Drawing.Size(465, 53);
             this.QRGbutton.TabIndex = 63;
-            this.QRGbutton.Text = "qrcode";
+            this.QRGbutton.Text = "Next";
             this.QRGbutton.UseVisualStyleBackColor = true;
             this.QRGbutton.Click += new System.EventHandler(this.QRCbutton_Click);
             // 
             // QRSbutton
             // 
-            this.QRSbutton.Location = new System.Drawing.Point(903, 854);
+            this.QRSbutton.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.QRSbutton.Location = new System.Drawing.Point(555, 870);
             this.QRSbutton.Name = "QRSbutton";
-            this.QRSbutton.Size = new System.Drawing.Size(111, 29);
+            this.QRSbutton.Size = new System.Drawing.Size(463, 53);
             this.QRSbutton.TabIndex = 64;
-            this.QRSbutton.Text = "qrscan";
+            this.QRSbutton.Text = "NEXT";
             this.QRSbutton.UseVisualStyleBackColor = true;
             this.QRSbutton.Click += new System.EventHandler(this.QRSbutton_Click);
+            // 
+            // qrcgeneratelabel
+            // 
+            this.qrcgeneratelabel.AutoSize = true;
+            this.qrcgeneratelabel.BackColor = System.Drawing.Color.Transparent;
+            this.qrcgeneratelabel.Font = new System.Drawing.Font("Engravers MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.qrcgeneratelabel.ForeColor = System.Drawing.Color.White;
+            this.qrcgeneratelabel.Location = new System.Drawing.Point(71, 841);
+            this.qrcgeneratelabel.Name = "qrcgeneratelabel";
+            this.qrcgeneratelabel.Size = new System.Drawing.Size(435, 21);
+            this.qrcgeneratelabel.TabIndex = 65;
+            this.qrcgeneratelabel.Text = "GENERATE  YOUR QR CODE HERE";
+            // 
+            // qrcscanlabel
+            // 
+            this.qrcscanlabel.AutoSize = true;
+            this.qrcscanlabel.BackColor = System.Drawing.Color.Transparent;
+            this.qrcscanlabel.Font = new System.Drawing.Font("Engravers MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.qrcscanlabel.ForeColor = System.Drawing.Color.White;
+            this.qrcscanlabel.Location = new System.Drawing.Point(611, 841);
+            this.qrcscanlabel.Name = "qrcscanlabel";
+            this.qrcscanlabel.Size = new System.Drawing.Size(356, 21);
+            this.qrcscanlabel.TabIndex = 66;
+            this.qrcscanlabel.Text = "SCAN YOUR QR CODE HERE";
             // 
             // Form1
             // 
@@ -675,7 +703,9 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1071, 911);
+            this.ClientSize = new System.Drawing.Size(1073, 1050);
+            this.Controls.Add(this.qrcscanlabel);
+            this.Controls.Add(this.qrcgeneratelabel);
             this.Controls.Add(this.QRSbutton);
             this.Controls.Add(this.QRGbutton);
             this.Controls.Add(this.AdminLoginbutton);
@@ -807,5 +837,7 @@
         private Button AdminLoginbutton;
         private Button QRGbutton;
         private Button QRSbutton;
+        private Label qrcgeneratelabel;
+        private Label qrcscanlabel;
     }
 }

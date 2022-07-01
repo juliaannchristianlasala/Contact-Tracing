@@ -28,31 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.qrgenbutton = new System.Windows.Forms.Button();
             this.qrpicbox = new System.Windows.Forms.PictureBox();
             this.qrgenlabel = new System.Windows.Forms.Label();
             this.infoslabel = new System.Windows.Forms.Label();
             this.InfpPicbox = new System.Windows.Forms.PictureBox();
+            this.InfLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.qrpicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfpPicbox)).BeginInit();
             this.SuspendLayout();
             // 
             // qrgenbutton
             // 
+            this.qrgenbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.qrgenbutton.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.qrgenbutton.Location = new System.Drawing.Point(755, 537);
+            this.qrgenbutton.ForeColor = System.Drawing.Color.White;
+            this.qrgenbutton.Location = new System.Drawing.Point(753, 533);
             this.qrgenbutton.Name = "qrgenbutton";
-            this.qrgenbutton.Size = new System.Drawing.Size(439, 46);
+            this.qrgenbutton.Size = new System.Drawing.Size(446, 70);
             this.qrgenbutton.TabIndex = 0;
-            this.qrgenbutton.Text = "Generate";
-            this.qrgenbutton.UseVisualStyleBackColor = true;
+            this.qrgenbutton.Text = "Click to Generate";
+            this.qrgenbutton.UseVisualStyleBackColor = false;
             this.qrgenbutton.Click += new System.EventHandler(this.qrgenbutton_Click);
             // 
             // qrpicbox
             // 
-            this.qrpicbox.Location = new System.Drawing.Point(737, 72);
+            this.qrpicbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.qrpicbox.Location = new System.Drawing.Point(753, 72);
             this.qrpicbox.Name = "qrpicbox";
-            this.qrpicbox.Size = new System.Drawing.Size(473, 452);
+            this.qrpicbox.Size = new System.Drawing.Size(446, 444);
             this.qrpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.qrpicbox.TabIndex = 1;
             this.qrpicbox.TabStop = false;
@@ -88,6 +93,17 @@
             this.InfpPicbox.TabIndex = 6;
             this.InfpPicbox.TabStop = false;
             // 
+            // InfLabel
+            // 
+            this.InfLabel.AutoSize = true;
+            this.InfLabel.Font = new System.Drawing.Font("Engravers MT", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.InfLabel.ForeColor = System.Drawing.Color.White;
+            this.InfLabel.Location = new System.Drawing.Point(130, 30);
+            this.InfLabel.Name = "InfLabel";
+            this.InfLabel.Size = new System.Drawing.Size(448, 35);
+            this.InfLabel.TabIndex = 7;
+            this.InfLabel.Text = "YOUR INFORMATION";
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -95,15 +111,17 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1234, 635);
+            this.Controls.Add(this.InfLabel);
             this.Controls.Add(this.infoslabel);
             this.Controls.Add(this.qrgenlabel);
             this.Controls.Add(this.qrpicbox);
             this.Controls.Add(this.qrgenbutton);
             this.Controls.Add(this.InfpPicbox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form4";
+            this.Text = " CONTACT TRACING: QR Code Generator";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.qrpicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InfpPicbox)).EndInit();
@@ -119,5 +137,6 @@
         private Label qrgenlabel;
         private Label infoslabel;
         private PictureBox InfpPicbox;
+        private Label InfLabel;
     }
 }
