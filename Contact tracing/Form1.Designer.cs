@@ -577,9 +577,10 @@
             // 
             // submitbutton
             // 
-            this.submitbutton.BackColor = System.Drawing.Color.Thistle;
+            this.submitbutton.BackColor = System.Drawing.Color.IndianRed;
             this.submitbutton.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.submitbutton.Location = new System.Drawing.Point(779, 696);
+            this.submitbutton.ForeColor = System.Drawing.Color.White;
+            this.submitbutton.Location = new System.Drawing.Point(779, 704);
             this.submitbutton.Name = "submitbutton";
             this.submitbutton.Size = new System.Drawing.Size(239, 81);
             this.submitbutton.TabIndex = 55;
@@ -589,7 +590,7 @@
             // 
             // ansconsenttxtbox
             // 
-            this.ansconsenttxtbox.Location = new System.Drawing.Point(777, 647);
+            this.ansconsenttxtbox.Location = new System.Drawing.Point(779, 632);
             this.ansconsenttxtbox.Name = "ansconsenttxtbox";
             this.ansconsenttxtbox.Size = new System.Drawing.Size(242, 27);
             this.ansconsenttxtbox.TabIndex = 56;
@@ -600,7 +601,7 @@
             this.ansconsentlabel.BackColor = System.Drawing.Color.Transparent;
             this.ansconsentlabel.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ansconsentlabel.ForeColor = System.Drawing.Color.MistyRose;
-            this.ansconsentlabel.Location = new System.Drawing.Point(779, 623);
+            this.ansconsentlabel.Location = new System.Drawing.Point(779, 608);
             this.ansconsentlabel.Name = "ansconsentlabel";
             this.ansconsentlabel.Size = new System.Drawing.Size(150, 22);
             this.ansconsentlabel.TabIndex = 57;
@@ -623,7 +624,7 @@
             this.Adminlabel.BackColor = System.Drawing.Color.Transparent;
             this.Adminlabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Adminlabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Adminlabel.Location = new System.Drawing.Point(55, 998);
+            this.Adminlabel.Location = new System.Drawing.Point(646, 913);
             this.Adminlabel.Name = "Adminlabel";
             this.Adminlabel.Size = new System.Drawing.Size(185, 24);
             this.Adminlabel.TabIndex = 60;
@@ -631,9 +632,9 @@
             // 
             // Admintxtbox
             // 
-            this.Admintxtbox.Location = new System.Drawing.Point(246, 997);
+            this.Admintxtbox.Location = new System.Drawing.Point(646, 943);
             this.Admintxtbox.Name = "Admintxtbox";
-            this.Admintxtbox.Size = new System.Drawing.Size(260, 27);
+            this.Admintxtbox.Size = new System.Drawing.Size(269, 27);
             this.Admintxtbox.TabIndex = 61;
             // 
             // AdminLoginbutton
@@ -641,7 +642,7 @@
             this.AdminLoginbutton.BackColor = System.Drawing.Color.Thistle;
             this.AdminLoginbutton.Font = new System.Drawing.Font("Elephant", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AdminLoginbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.AdminLoginbutton.Location = new System.Drawing.Point(521, 997);
+            this.AdminLoginbutton.Location = new System.Drawing.Point(921, 941);
             this.AdminLoginbutton.Name = "AdminLoginbutton";
             this.AdminLoginbutton.Size = new System.Drawing.Size(98, 30);
             this.AdminLoginbutton.TabIndex = 62;
@@ -651,24 +652,28 @@
             // 
             // QRGbutton
             // 
+            this.QRGbutton.BackColor = System.Drawing.Color.RosyBrown;
             this.QRGbutton.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.QRGbutton.Location = new System.Drawing.Point(56, 870);
+            this.QRGbutton.ForeColor = System.Drawing.Color.White;
+            this.QRGbutton.Location = new System.Drawing.Point(56, 852);
             this.QRGbutton.Name = "QRGbutton";
-            this.QRGbutton.Size = new System.Drawing.Size(465, 53);
+            this.QRGbutton.Size = new System.Drawing.Size(477, 40);
             this.QRGbutton.TabIndex = 63;
             this.QRGbutton.Text = "Next";
-            this.QRGbutton.UseVisualStyleBackColor = true;
+            this.QRGbutton.UseVisualStyleBackColor = false;
             this.QRGbutton.Click += new System.EventHandler(this.QRCbutton_Click);
             // 
             // QRSbutton
             // 
+            this.QRSbutton.BackColor = System.Drawing.Color.RosyBrown;
             this.QRSbutton.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.QRSbutton.Location = new System.Drawing.Point(555, 870);
+            this.QRSbutton.ForeColor = System.Drawing.Color.White;
+            this.QRSbutton.Location = new System.Drawing.Point(58, 933);
             this.QRSbutton.Name = "QRSbutton";
-            this.QRSbutton.Size = new System.Drawing.Size(463, 53);
+            this.QRSbutton.Size = new System.Drawing.Size(475, 40);
             this.QRSbutton.TabIndex = 64;
             this.QRSbutton.Text = "NEXT";
-            this.QRSbutton.UseVisualStyleBackColor = true;
+            this.QRSbutton.UseVisualStyleBackColor = false;
             this.QRSbutton.Click += new System.EventHandler(this.QRSbutton_Click);
             // 
             // qrcgeneratelabel
@@ -677,7 +682,7 @@
             this.qrcgeneratelabel.BackColor = System.Drawing.Color.Transparent;
             this.qrcgeneratelabel.Font = new System.Drawing.Font("Engravers MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.qrcgeneratelabel.ForeColor = System.Drawing.Color.White;
-            this.qrcgeneratelabel.Location = new System.Drawing.Point(71, 841);
+            this.qrcgeneratelabel.Location = new System.Drawing.Point(75, 828);
             this.qrcgeneratelabel.Name = "qrcgeneratelabel";
             this.qrcgeneratelabel.Size = new System.Drawing.Size(435, 21);
             this.qrcgeneratelabel.TabIndex = 65;
@@ -689,7 +694,7 @@
             this.qrcscanlabel.BackColor = System.Drawing.Color.Transparent;
             this.qrcscanlabel.Font = new System.Drawing.Font("Engravers MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.qrcscanlabel.ForeColor = System.Drawing.Color.White;
-            this.qrcscanlabel.Location = new System.Drawing.Point(611, 841);
+            this.qrcscanlabel.Location = new System.Drawing.Point(109, 909);
             this.qrcscanlabel.Name = "qrcscanlabel";
             this.qrcscanlabel.Size = new System.Drawing.Size(356, 21);
             this.qrcscanlabel.TabIndex = 66;
@@ -703,7 +708,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1073, 1050);
+            this.ClientSize = new System.Drawing.Size(1052, 1004);
             this.Controls.Add(this.qrcscanlabel);
             this.Controls.Add(this.qrcgeneratelabel);
             this.Controls.Add(this.QRSbutton);
