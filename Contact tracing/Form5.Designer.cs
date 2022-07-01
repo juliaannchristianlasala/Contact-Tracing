@@ -82,9 +82,8 @@
             this.ScanInfoLabel.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ScanInfoLabel.Location = new System.Drawing.Point(538, 91);
             this.ScanInfoLabel.Name = "ScanInfoLabel";
-            this.ScanInfoLabel.Size = new System.Drawing.Size(36, 20);
+            this.ScanInfoLabel.Size = new System.Drawing.Size(0, 20);
             this.ScanInfoLabel.TabIndex = 11;
-            this.ScanInfoLabel.Text = "ggg";
             // 
             // BgPicbox
             // 

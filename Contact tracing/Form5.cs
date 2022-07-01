@@ -42,6 +42,7 @@ namespace Contact_tracing
             capturedataform = new VideoCaptureDevice(filterdatainfos[camcombox.SelectedIndex].MonikerString);
             capturedataform.NewFrame += new NewFrameEventHandler(capturedataform_NewFrame);
             capturedataform.Start();
+            ScanTimer.Start();
         }
 
         private void capturedataform_NewFrame(object sender, NewFrameEventArgs newscanner)
@@ -51,7 +52,16 @@ namespace Contact_tracing
 
         private void ScanTimer_Tick(object sender, EventArgs e)
         {
-
+            if (ScanPicbox.Image != null)
+            {
+                BarcodeReader reader = new BarcodeReader();
+                Result result = reader.Decode((Bitmap)ScanPicbox.Image);
+                if (result != null)
+                {
+                    ScanInfoLabel.Text = result.ToString();
+                    ScanTimer.Stop();
+                }
+            }
         }
     }
 }
