@@ -47,7 +47,7 @@
             this.QRScanLabel.ForeColor = System.Drawing.Color.White;
             this.QRScanLabel.Location = new System.Drawing.Point(35, 27);
             this.QRScanLabel.Name = "QRScanLabel";
-            this.QRScanLabel.Size = new System.Drawing.Size(280, 40);
+            this.QRScanLabel.Size = new System.Drawing.Size(272, 38);
             this.QRScanLabel.TabIndex = 8;
             this.QRScanLabel.Text = "SCAN HERE";
             // 
@@ -62,6 +62,7 @@
             this.StScanButton.TabIndex = 9;
             this.StScanButton.Text = "START";
             this.StScanButton.UseVisualStyleBackColor = false;
+            this.StScanButton.Click += new System.EventHandler(this.StScanButton_Click);
             // 
             // ScanPicbox
             // 

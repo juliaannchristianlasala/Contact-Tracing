@@ -35,5 +35,18 @@ namespace Contact_tracing
             camcombox.SelectedIndex = 0;
             capturedataform = new VideoCaptureDevice();
         }
+
+        private void StScanButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Allow to use your camera");
+            capturedataform = new VideoCaptureDevice(filterdatainfos[camcombox.SelectedIndex].MonikerString);
+            capturedataform.NewFrame += new NewFrameEventHandler(capturedataform_NewFrame);
+            capturedataform.Start();
+        }
+
+        private void capturedataform_NewFrame(object sender, NewFrameEventArgs newscanner)
+        {
+            ScanPicbox.Image=(Bitmap)newscanner.Frame.Clone();
+        }
     }
 }
