@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xuMfI9RfAXMoJqPc23DmM6FZHvZr61XVVIuND/hISnsIvUHETjiaBxsyAiT9zxJ03mIMl+ChxKjZuaTXQVLhCg==",
+  "dgSpecHash": "NxjtORGu4vmRGzbtSGedtWlkel3j6PMOnQS3E0+1uh8TZLVTM8hn0YMjBMUIrIqH+/jNJL/J4XuT6QPriNrMgw==",
   "success": true,
   "projectFilePath": "C:\\Users\\JULIA-ANN\\source\\repos\\Contact tracing\\Contact tracing\\Contact tracing.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,8 @@
     "C:\\Users\\JULIA-ANN\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
     "C:\\Users\\JULIA-ANN\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\JULIA-ANN\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
-    "C:\\Users\\JULIA-ANN\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+    "C:\\Users\\JULIA-ANN\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\JULIA-ANN\\.nuget\\packages\\zxing.net\\0.16.8\\zxing.net.0.16.8.nupkg.sha512"
   ],
   "logs": [
     {
