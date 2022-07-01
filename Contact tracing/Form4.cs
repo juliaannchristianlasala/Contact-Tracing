@@ -22,7 +22,7 @@ namespace Contact_tracing
             foreach (var genqr in allfiles)
             {
                 if (genqr.Contains(data))
-                {
+                {   
                     data = File.ReadAllText(genqr);
                     infoslabel.Text = data;
                 }
@@ -31,10 +31,12 @@ namespace Contact_tracing
 
         private void qrgenbutton_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Please take a Screenshot of the generated QR Code, Thank you!");
             QRCodeGenerator qrgen = new QRCodeGenerator();
             QRCodeData infos = qrgen.CreateQrCode(infoslabel.Text, QRCodeGenerator.ECCLevel.Q);
             QRCode gcode = new QRCode(infos);
             qrpicbox.Image = gcode.GetGraphic(10);
+            
         }
 
         private void qrpicbox_Click(object sender, EventArgs e)
