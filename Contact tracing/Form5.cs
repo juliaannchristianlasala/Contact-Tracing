@@ -48,5 +48,10 @@ namespace Contact_tracing
         {
             ScanPicbox.Image=(Bitmap)newscanner.Frame.Clone();
         }
+
+        private void ScanTimer_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

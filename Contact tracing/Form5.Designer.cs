@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.QRScanLabel = new System.Windows.Forms.Label();
             this.StScanButton = new System.Windows.Forms.Button();
@@ -36,6 +37,7 @@
             this.BgPicbox = new System.Windows.Forms.PictureBox();
             this.camcombox = new System.Windows.Forms.ComboBox();
             this.CamLabel = new System.Windows.Forms.Label();
+            this.ScanTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ScanPicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BgPicbox)).BeginInit();
             this.SuspendLayout();
@@ -111,6 +113,11 @@
             this.CamLabel.TabIndex = 14;
             this.CamLabel.Text = "Camera:";
             // 
+            // ScanTimer
+            // 
+            this.ScanTimer.Interval = 1000;
+            this.ScanTimer.Tick += new System.EventHandler(this.ScanTimer_Tick);
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -145,5 +152,6 @@
         private PictureBox BgPicbox;
         private ComboBox camcombox;
         private Label CamLabel;
+        private System.Windows.Forms.Timer ScanTimer;
     }
 }
