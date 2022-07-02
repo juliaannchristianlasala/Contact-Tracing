@@ -60,6 +60,9 @@ namespace Contact_tracing
                 {
                     ScanInfoLabel.Text = result.ToString();
                     ScanTimer.Stop();
+                    StreamWriter file = new StreamWriter(@"C:\Users\JULIA-ANN\source\repos\Contact Tracing QR Code\" + "Contact Tracing" + ".txt");
+                    file.WriteLine(result.ToString());
+                    file.Close();
                 }
             }
         }
